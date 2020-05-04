@@ -1,5 +1,5 @@
 # apt-get update && apt-get upgrade
-# apt-get install default-jdk
+apt-get install default-jdk
 # apt-get install wget
 wget https://github.com/balajikadambi/myjavascaleapp/raw/master/myjavaapp.jar
 java -cp myjavaapp.jar com.example.scale.CPUScaler
