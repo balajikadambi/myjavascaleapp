@@ -1,0 +1,11 @@
+apt-get update && apt-get upgrade
+apt-get install default-jdk
+wget https://raw.githubusercontent.com/balajikadambi/myjavascaleapp/master/pom.xml
+mvn install
+cp ~/.m2/repository/com/ibm/websphere/appserver/runtime/wlp-webProfile8/20.0.0.4/wlp-webProfile8-20.0.0.4.zip ~/wlp.zip
+apt-get install unzip
+unzip wlp.zip
+wget https://github.com/balajikadambi/myjavascaleapp/raw/master/autoscale-webapp.war
+cp autoscale-webapp.war ~/wlp/usr/servers/defaultServer/dropins/autoscale-webapp.war
+cd wlp/bin
+./server start
