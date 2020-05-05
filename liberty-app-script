@@ -6,6 +6,6 @@ mvn install
 cp ~/.m2/repository/com/ibm/websphere/appserver/runtime/wlp-webProfile8/20.0.0.4/wlp-webProfile8-20.0.0.4.zip ~/wlp.zip
 apt-get install unzip
 unzip wlp.zip
-cp autoscale-webapp.war ~/wlp/usr/servers/defaultServer/dropins/autoscale-webapp.war
+cp autoscale-webapp.war ~/wlp/usr/servers/defaultServer/dropins
 cd wlp/bin
 ./server start
