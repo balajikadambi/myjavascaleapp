@@ -1,3 +1,4 @@
+apt-get --assume-yes update
 apt-get --assume-yes install default-jdk
 apt-get --assume-yes install maven
 wget https://github.com/balajikadambi/myjavascaleapp/raw/master/autoscale-webapp.war
