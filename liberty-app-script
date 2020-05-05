@@ -1,5 +1,5 @@
-apt-get update && apt-get upgrade
-apt-get install default-jdk
+apt-get --assume-yes update && apt-get --assume-yes upgrade
+apt-get --assume-yes install default-jdk
 wget https://github.com/balajikadambi/myjavascaleapp/raw/master/autoscale-webapp.war
 wget https://raw.githubusercontent.com/balajikadambi/myjavascaleapp/master/pom.xml
 mvn install
