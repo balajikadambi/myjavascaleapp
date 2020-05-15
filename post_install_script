@@ -3,7 +3,7 @@ apt-get --assume-yes update
 apt-get --assume-yes install default-jdk
 apt-get --assume-yes install maven
 wget https://github.com/balajikadambi/myjavascaleapp/raw/master/autoscale-webapp.war
-wget https://raw.github.ibm.com/att-cloudnative/patterns-artifact-repo/master/auto-scale/application/artifacts/pom.xml?token=AAAEDXXSIEA3LE2LAMB7M2K6XTFSM -O pom.xml
+wget https://raw.githubusercontent.com/balajikadambi/myjavascaleapp/master/pom.xml
 mvn install
 cp /root/.m2/repository/com/ibm/websphere/appserver/runtime/wlp-webProfile8/20.0.0.4/wlp-webProfile8-20.0.0.4.zip /root/wlp.zip
 apt-get install unzip
